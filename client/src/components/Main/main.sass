@@ -1,0 +1,88 @@
+.interface
+  display: flex
+  flex-direction: column
+.players
+  display: flex
+  margin: 0 auto
+  width: 770px
+  justify-content: space-between
+  padding-bottom: 80px
+  &__one
+    font-weight: 500
+    font-size: 32px
+    line-height: 37px
+    color: #FEF9F9
+.images
+  display: flex
+  margin: 0 auto
+  justify-content: space-between
+  width: 770px
+  &__gesture
+    &_reverse
+      transform: scaleX(-1)
+.options
+  display: flex
+  flex-direction: column
+  margin: 0 auto
+  width: 770px
+  justify-content: space-between
+  &__title
+    font-weight: 500
+    font-size: 30px
+    line-height: 40px
+    text-align: center
+    color: #FFFDFD
+    padding-bottom: 30px
+  &__buttons
+    display: flex
+    margin: 0 auto
+    width: 770px
+    justify-content: space-between
+    button
+      border: none
+      padding: 7px 0
+      background: #F6DF08
+      border-radius: 10px
+      font-size: 22px
+      width: 140px
+
+
+@keyframes shakeComputer
+    0%
+      transform: translateY(0px)
+    15%
+      transform: translateY(-50px)
+    25%
+      transform: translateY(0px)
+    35%
+      transform: translateY(-50px)
+    50%
+      transform: translateY(0px)
+    65%
+      transform: translateY(-50px)
+    75%
+      transform: translateY(0px)
+    85%
+      transform: translateY(-50px)
+    100%
+      transform: translateY(0px)
+
+@keyframes shakePlayer
+    0%
+      transform: rotateY(180deg) translateY(0px)
+    15%
+      transform: rotateY(180deg) translateY(-50px)
+    25%
+      transform: rotateY(180deg) translateY(0px)
+    35%
+      transform: rotateY(180deg) translateY(-50px)
+    50%
+      transform: rotateY(180deg) translateY(0px)
+    65%
+      transform: rotateY(180deg) translateY(-50px)
+    75%
+      transform: rotateY(180deg) translateY(0px)
+    85%
+      transform: rotateY(180deg) translateY(-50px)
+    100%
+      transform: rotateY(180deg) translateY(0px)
